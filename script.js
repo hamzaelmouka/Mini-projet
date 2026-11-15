@@ -47,22 +47,6 @@ function selec(){
         return false;
     }
 }
-
-// function emaill(){
-//     data.forEach((p)=>{
-//         if(!p.email.includes(email.value.trim())){
-//             paraemail.textContent="❌ email exete deja entre un noutre email ";
-//             return false;
-//         }
-//     })
-//     if(regexemail.test(email.value.trim())){
-//         paraemail.textContent="✅";
-//         return true ;
-//     }else{
-//         paraemail.textContent="❌ entre un cractire ";
-//         return false;
-//     }
-// }
 function emaill(){
     const existe = data.some((p)=>{
         return p.email.toLowerCase() === email.value.trim().toLowerCase();
