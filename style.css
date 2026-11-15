@@ -1,8 +1,17 @@
 body{
+    font-family: "Poppins" ,sans-serif;
+    background-color: #F3F4F6;
+    color: #1F2937;
+}
+button{
     
+    background-color: #059669;
+    color: white;
+    border: none;
 }
 header{
-    border-bottom: solid 3px;
+    background-color: white;
+    border-bottom: solid 3px #059669;
     align-items: center;
     position: fixed;
     top: 0;
@@ -42,9 +51,11 @@ main .pp{
     gap: 10px;
 }
 .statique div{
+    background-color: white;
+    border: solid 2px #059669;
+    color: #1F2937;
     display: flex;
     flex-direction: column;
-    border: solid 3px;
     border-radius: 40px ;
     align-items: center;
     margin: 35px;
@@ -59,9 +70,11 @@ main .pp{
     justify-content: center;
 }
 form{
+    background-color: white;
+    border: solid 2px #D1D5DB;
+    color: #1F2937;
     margin-top: 20px;
     font-size: 15px;
-    border: solid 3px;
     border-radius: 30px;
     padding: 20px;
 }
@@ -72,7 +85,7 @@ form{
 }
 .inpu{
     height: 30px;
-    width: 60%;
+    width: 100%;
     border-radius: 10px;
 }
 .rocherch{
@@ -88,12 +101,11 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
  }
 .div{
     margin: 20px;
     display: flex;
-    gap: 60px;
+    gap: 20%;
     justify-content: center;
 }
 form div{
@@ -106,20 +118,25 @@ form div{
     padding: 10px;
 }
 section{
+    
+    background-color: white;
+    border: solid 2px #D1D5DB;
+    color: #1F2937;
     margin-top: 20px;
     font-size: 15px;
-    border: solid 3px;
     border-radius: 30px;
     padding: 20px;
 }
 section div{
-    margin: 35px;
+    margin: 20px;
 }
 ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
     list-style: none;
-    flex-direction: row ;
+    /* flex-direction: row ;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     
 }
 .selection{
@@ -128,19 +145,23 @@ ul{
 
 }
 li{
-    padding-left: 15px;
-    margin-top: 20px ;
-    border: solid 2px;
+    
+    background-color: white;
+    border: solid 1px #D1D5DB;
+    color: #1F2937;
+    padding-left: 40px;
+    padding-right: 20px;
+    margin-top: 10px ;
+    margin-left: 10px;
     border-radius: 5px;
     display: flex;
     align-items: center;
 }
 .sup{
     margin-left: auto;
-    font-size: 25px;
 }
-ul button{
-    margin: 25px;
+#supprime{
+    margin: 20px;
     padding: 15px;
     border-radius: 10px;
 }
@@ -151,10 +172,42 @@ ul button{
     align-items: center;
 }
 footer{
-    border-top: solid 3px;
+    border-top: solid 3px #059669;
+    color: #1F2937;
     margin-top: 70px;
 }
 .foo p{
     display: flex;
     justify-content: center;
+}
+
+
+#Tous, #Web, #Langues, #Bureautique {
+    background-color: #F3F4F6;
+    color: #1F2937;
+    border: 2px solid #059669;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sala{
+    font-size:23px;
+    margin-left: auto;
+    display: flex;
+    justify-content: end;
+
+}
+.hidden{
+    display: none;
+}
+#Tous.active,#Web.active,#Langues.active,#Bureautique.active {
+    background-color: #059669;
+    color: white;
+    border: 2px solid #059669;
+}
+
+.red{
+    color: red;
 }
