@@ -23,12 +23,12 @@
             <div>
                 <p>👥</p>
                 <p>total participants</p>
-                <p>0</p>
+                <p id="contt">0</p>
             </div>
             <div>
                 <p>☑️</p>
                 <p>Participants sélectionnés</p>
-                <p>0</p>
+                <p id="contP">0</p>
             </div>
         </div>
         <div class="info">
@@ -37,25 +37,27 @@
         <form class="infor">
             <p>**Veuillez vérifier que toutes les informations sont correctes avant de valider** .</p>
             <div>
-                <p for="">Nom complet *</p>
-                <input class="input" type="text" placeholder="entre le nom complet ">
+                <p for="">Nom complet  <span>*</span></p>
+                <input id="noom" class="input" type="text" placeholder="entre le nom complet ">
+                <p id="paranoom" class="red" ></p>
             </div>
             <div>
-                <p for="">Formation *</p>
-                <select class="input" name="" id="">
+                <p for="">Formation <span>*</span></p>
+                <select id="select" class="input" name="" id="">
                     <option value="">choisi un formation</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
+                    <option value="Bureautique">Bureautique </option>
+                    <option value="Web">Web</option>
+                    <option value="Langues">Langues</option>
                 </select>
+                <p id="paraselect" class="red"></p>
             </div>
             <div>
-                <p for="">Adresse email *</p>
-                <input class="input" type="text" placeholder="exemple@gmail.com">
+                <p for="">Adresse email <span>*</span></p>
+                <input id="email" class="input" type="text" placeholder="exemple@gmail.com">
+                <p id="paraemail" class="red"></p>
             </div>
             <div>
-                <button class="input">
+                <button type="submit" id="ajoute" class="input">
                     Ajouter +
                 </button>
             </div>
@@ -66,10 +68,9 @@
             </p>
             <div>
                 <div class="rocher">
-                    <label> Rechercher un participant : </label>
-                    <input class="inpu" type="text" placeholder=" Rocherch par nom ou email ">
+                    <input id="search" class="inpu" type="text" placeholder=" Rocherch par nom ou email ">
                 </div>
-                <div class="rocherch div"><span>Tous</span> <span>Bureautique </span><span>Web </span><span> Langues</span></div>
+                <div class="rocherch div"><span id="Tous">Tous</span> <span id="Bureautique">Bureautique </span><span id="Web">Web </span><span id="Langues">Langues</span></div>
             </div>
         </div>
         <div class="info">
@@ -80,33 +81,12 @@
         </div>
         <section  action="">
             <p>Liste des participants : </p>
+            <p class="aucun">
+                Aucun participant pour le moment.
+            </p>
             <ul>
-                <p class="aucun">
-                    Aucun participant pour le moment.
-                </p>
-                <li>
-                    <input type="checkbox" class="selection">
-                    <div>
-                        <p>Hamza elmouka</p>
-                        <p>exemple@gamil.com</p>
-                    </div>
-                    <div class="sup">
-                        🚮
-                    </div>
-                </li>
-                <li>
-                    <input type="checkbox" class="selection">
-                    <div>
-                        <p>Hamza elmouka</p>
-                        <p>exemple@gamil.com</p>
-                    </div>
-                    <div class="sup">
-                        🚮
-                    </div>
-                </li> 
-                <button>Supprimer la sélection</button>
             </ul>
-            
+            <button id="supprime" class="hidden">Supprimer la sélection</button>
         </section>
     </main>
     <footer>
@@ -115,6 +95,6 @@
             <p>Ensemble, construisons un avenir professionnel meilleur.</p>
         </div>
     </footer>
-    <script type="modale" src="script.js"></script>
+    <script  src="script.js"></script>
 </body>
 </html>
